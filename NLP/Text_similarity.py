@@ -30,7 +30,7 @@ def compute_similarity(embeddings1, embeddings2):
 
 
 # Streamlit app
-st.image('bivien.png',caption='Bivien',use_column_width='never', width = 60)
+#st.image('./bivien.png',caption='Bivien',use_column_width='never', width = 60)
 st.title("Aplicacion similitud de texto - PDV")
 st.write("Realiza la carga del listado de puntos de venta latam a homologar y el listado de puntos de venta de la compañia. Debemos de garantizar que la primera colomuna tenga los nombres de puntos de venta a homologar, para los dos archivos y estos deben de ser en formato csv")
 
