@@ -40,8 +40,8 @@ uploaded_file2 = st.file_uploader("Carga el archivo de pdv", type="csv")
 
 if uploaded_file1 is not None and uploaded_file2 is not None:
     # Read the CSV files into DataFrames
-    df1 = pd.read_csv(uploaded_file1)
-    df2 = pd.read_csv(uploaded_file2)
+    df1 = pd.read_csv(uploaded_file1,encoding='latin1')
+    df2 = pd.read_csv(uploaded_file2,encoding='latin1')
 
     # Assuming the words are in the first column of each DataFrame
     words_db1 = df1.iloc[:, 0].tolist()
